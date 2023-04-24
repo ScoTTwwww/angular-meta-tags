@@ -11,7 +11,8 @@
     "dev:ssr": "ng run meta-tags:serve-ssr",
     "serve:ssr": "node dist/meta-tags/server/main.js",
     "build:ssr": "ng build --configuration production && ng run meta-tags:server:production",
-    "prerender": "ng run meta-tags:prerender"
+    "prerender": "ng run meta-tags:prerender",
+    "vercel-build": "npm run build:ssr"
   },
   "private": true,
   "dependencies": {
